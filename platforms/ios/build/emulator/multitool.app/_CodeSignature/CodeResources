@@ -246,11 +246,11 @@
 		</data>
 		<key>app/pages/login/login.component.js</key>
 		<data>
-		c5fxmtUOdf+ahbwTrR8dxkFDqd4=
+		kdVf0K3bU7V7mBpKPNR2leolvic=
 		</data>
 		<key>app/pages/login/login.component.ts</key>
 		<data>
-		EJkBZbKacN7Lto+2TkAoco2cA0A=
+		4vlMAYwgpmD45GGUFbSPVb+W82Q=
 		</data>
 		<key>app/pages/login/login.css</key>
 		<data>
@@ -258,7 +258,31 @@
 		</data>
 		<key>app/pages/login/login.html</key>
 		<data>
-		dtc16TBAWGaRh2Ng9VfCRQo8aDw=
+		QxM2GnORY13Za0ZiqmcSMZeu1Tk=
+		</data>
+		<key>app/shared/config.js</key>
+		<data>
+		edh7VnyEkGcIBK1JKcrA3u+45eo=
+		</data>
+		<key>app/shared/config.ts</key>
+		<data>
+		H8b51T/BHMHm42Kx1oliaUIFAh8=
+		</data>
+		<key>app/shared/user/user.js</key>
+		<data>
+		l5S0M0RFOJAdB1FFsQPHSVrXdXc=
+		</data>
+		<key>app/shared/user/user.service.js</key>
+		<data>
+		StGq9N5pgmagQ9uSVcRGRtmFvoc=
+		</data>
+		<key>app/shared/user/user.service.ts</key>
+		<data>
+		dEe08a/+HnXRYFMX17njzA11Wzo=
+		</data>
+		<key>app/shared/user/user.ts</key>
+		<data>
+		HOhyTeScyGtC1OrlI97b1pw2BO0=
 		</data>
 		<key>app/tns_modules/@angular/animations/README.md</key>
 		<data>
@@ -15827,6 +15851,50 @@
 		<key>app/tns_modules/@angular/router/upgrade/upgrade.metadata.json</key>
 		<data>
 		HQBTPsaALwtm33A2jAeNYZphPNI=
+		</data>
+		<key>app/tns_modules/email-validator/.npmignore</key>
+		<data>
+		w9MOyLwBRwq6KstZuOzW+Jnx5RQ=
+		</data>
+		<key>app/tns_modules/email-validator/.travis.yml</key>
+		<data>
+		FpKCoE5ebiWyVosyVLsd+ihriss=
+		</data>
+		<key>app/tns_modules/email-validator/CHANGELOG.md</key>
+		<data>
+		tD94gohRqhupRog6o2lBBrixvfY=
+		</data>
+		<key>app/tns_modules/email-validator/LICENSE</key>
+		<data>
+		j9rbAcjVpnvC8r4XQ39OKm5YmwQ=
+		</data>
+		<key>app/tns_modules/email-validator/README.md</key>
+		<data>
+		wQYloO2TIQVqQNvRYT5be4H4rZg=
+		</data>
+		<key>app/tns_modules/email-validator/index.d.ts</key>
+		<data>
+		DlviWQCTxhj2UFtfbXNCV+jrMtY=
+		</data>
+		<key>app/tns_modules/email-validator/index.js</key>
+		<data>
+		r6sC5MrKlqaeLhXS24dGiKQ/Pxk=
+		</data>
+		<key>app/tns_modules/email-validator/index.min.j</key>
+		<data>
+		zQqt98ux/9b3urLnjIHrbyvtF2A=
+		</data>
+		<key>app/tns_modules/email-validator/package-lock.json</key>
+		<data>
+		gPv76JtAcoZ0pOrsn7fuY/XDoQI=
+		</data>
+		<key>app/tns_modules/email-validator/package.json</key>
+		<data>
+		4cCJi5ggXyuvLQvCS0xbLMmMezI=
+		</data>
+		<key>app/tns_modules/email-validator/test.js</key>
+		<data>
+		uysxY+CTwI/d54Itrjn3AvWNihg=
 		</data>
 		<key>app/tns_modules/nativescript-angular/README.md</key>
 		<data>
@@ -33906,22 +33974,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			c5fxmtUOdf+ahbwTrR8dxkFDqd4=
+			kdVf0K3bU7V7mBpKPNR2leolvic=
 			</data>
 			<key>hash2</key>
 			<data>
-			7ikW0So85ADmIn1Dm+r4qmo8Vtbu6Mp4+J3sQxd6E6w=
+			Qx1SlVHWKXQ0YyI5L8j3MJrj2x/TnRHBGZGSifLp59c=
 			</data>
 		</dict>
 		<key>app/pages/login/login.component.ts</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			EJkBZbKacN7Lto+2TkAoco2cA0A=
+			4vlMAYwgpmD45GGUFbSPVb+W82Q=
 			</data>
 			<key>hash2</key>
 			<data>
-			O9INr4xmgkUA7AvU6BEaEHOBjCnny8/st0q0jak8wQg=
+			klUC17T91p4ploWDDorKvaAXOUBSdtxEh7ZR2Pr65b0=
 			</data>
 		</dict>
 		<key>app/pages/login/login.css</key>
@@ -33939,11 +34007,77 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			dtc16TBAWGaRh2Ng9VfCRQo8aDw=
+			QxM2GnORY13Za0ZiqmcSMZeu1Tk=
 			</data>
 			<key>hash2</key>
 			<data>
-			XbCJrUu0tgmWqCZG7RoIJzp06XA24ZVgP1zgSsO5ED4=
+			SgDKaKHiR4zdIDgfFCpStxu4pB7H+CkCalcvdNhT9Sw=
+			</data>
+		</dict>
+		<key>app/shared/config.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			edh7VnyEkGcIBK1JKcrA3u+45eo=
+			</data>
+			<key>hash2</key>
+			<data>
+			m5/mTLMKChYa7lfFOzXWkC/gEs7QkbsniR9rQJ+DiF4=
+			</data>
+		</dict>
+		<key>app/shared/config.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			H8b51T/BHMHm42Kx1oliaUIFAh8=
+			</data>
+			<key>hash2</key>
+			<data>
+			BPLx0AE+aTdhJg85nWre/zWiwxCp6+1Ds/t325QtHMo=
+			</data>
+		</dict>
+		<key>app/shared/user/user.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			l5S0M0RFOJAdB1FFsQPHSVrXdXc=
+			</data>
+			<key>hash2</key>
+			<data>
+			vQfdYl7l09921Cj+RXuFoUv5Qi+He/rgNReLeGxB8Xw=
+			</data>
+		</dict>
+		<key>app/shared/user/user.service.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			StGq9N5pgmagQ9uSVcRGRtmFvoc=
+			</data>
+			<key>hash2</key>
+			<data>
+			FHeDC/RSMMkJsVFdID7/iTsmp3XjFPEVx7jtQjjXb6Q=
+			</data>
+		</dict>
+		<key>app/shared/user/user.service.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			dEe08a/+HnXRYFMX17njzA11Wzo=
+			</data>
+			<key>hash2</key>
+			<data>
+			GmpdCpSJdfdcA7p+TgxrCJcaAk72VdkCu59gCkJKCXM=
+			</data>
+		</dict>
+		<key>app/shared/user/user.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HOhyTeScyGtC1OrlI97b1pw2BO0=
+			</data>
+			<key>hash2</key>
+			<data>
+			IFRlaG8QljlP2qH8kqQOxEbOtBbV2DGk8FO97bWPKns=
 			</data>
 		</dict>
 		<key>app/tns_modules/@angular/animations/README.md</key>
@@ -76756,6 +76890,127 @@
 			<key>hash2</key>
 			<data>
 			SS/AcR6gRoK8TCFC0w+xmJ45N1v96AUcSncsx/VFIx0=
+			</data>
+		</dict>
+		<key>app/tns_modules/email-validator/.npmignore</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			w9MOyLwBRwq6KstZuOzW+Jnx5RQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			YkgcMzb8xyUT6FdWLO+hkMakBEBPTBDGabltROWRFqU=
+			</data>
+		</dict>
+		<key>app/tns_modules/email-validator/.travis.yml</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FpKCoE5ebiWyVosyVLsd+ihriss=
+			</data>
+			<key>hash2</key>
+			<data>
+			PsURf4GSfy0OBZFeTL3Fp8YFfLj0KkDVth4m4upavlY=
+			</data>
+		</dict>
+		<key>app/tns_modules/email-validator/CHANGELOG.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			tD94gohRqhupRog6o2lBBrixvfY=
+			</data>
+			<key>hash2</key>
+			<data>
+			6Juc2WBt6MekhjbFUb1aoBjmj/CSsTYmVSCv4lAow9M=
+			</data>
+		</dict>
+		<key>app/tns_modules/email-validator/LICENSE</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			j9rbAcjVpnvC8r4XQ39OKm5YmwQ=
+			</data>
+			<key>hash2</key>
+			<data>
+			edD8RHFgB93cN1YBvKiHmtRbwRZb+TQrehZXK09Bq+g=
+			</data>
+		</dict>
+		<key>app/tns_modules/email-validator/README.md</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			wQYloO2TIQVqQNvRYT5be4H4rZg=
+			</data>
+			<key>hash2</key>
+			<data>
+			KDptrYLaGsyqhwx8QwQbUNSQOn9/5w15oCOailU0CwY=
+			</data>
+		</dict>
+		<key>app/tns_modules/email-validator/index.d.ts</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DlviWQCTxhj2UFtfbXNCV+jrMtY=
+			</data>
+			<key>hash2</key>
+			<data>
+			N72ZnCHFh7A3O6feLjpwFdgH6MZ7u899ePgNWbs4BxE=
+			</data>
+		</dict>
+		<key>app/tns_modules/email-validator/index.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			r6sC5MrKlqaeLhXS24dGiKQ/Pxk=
+			</data>
+			<key>hash2</key>
+			<data>
+			Z5wguEGad7gbx9Vnq+UkRgZwpn6YuHxUCaKgrFsNYrQ=
+			</data>
+		</dict>
+		<key>app/tns_modules/email-validator/index.min.j</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			zQqt98ux/9b3urLnjIHrbyvtF2A=
+			</data>
+			<key>hash2</key>
+			<data>
+			QPzmqW969BFjN5iN9QP56fJf2fwW5BZ6JJeFHqNm2Xc=
+			</data>
+		</dict>
+		<key>app/tns_modules/email-validator/package-lock.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			gPv76JtAcoZ0pOrsn7fuY/XDoQI=
+			</data>
+			<key>hash2</key>
+			<data>
+			TUWkAfyRLn5C/s51qNvtnXdRSW7fsr/ax0VGpJJTjcE=
+			</data>
+		</dict>
+		<key>app/tns_modules/email-validator/package.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			4cCJi5ggXyuvLQvCS0xbLMmMezI=
+			</data>
+			<key>hash2</key>
+			<data>
+			HafArsC9FdwFTVA01Qr6sTn47+pDIwCUFO2bPBk/ggA=
+			</data>
+		</dict>
+		<key>app/tns_modules/email-validator/test.js</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uysxY+CTwI/d54Itrjn3AvWNihg=
+			</data>
+			<key>hash2</key>
+			<data>
+			Lt9vJi+ZHJdsW69cpLeZvkpKBH+UMiG2mcHg+jQTY1c=
 			</data>
 		</dict>
 		<key>app/tns_modules/nativescript-angular/README.md</key>
