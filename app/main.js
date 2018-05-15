@@ -1,0 +1,76 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+// this import should be first in order to load some required settings (like globals and reflect-metadata)
+var platform_1 = require("nativescript-angular/platform");
+var app_module_1 = require("./app.module");
+var application_1 = require("application");
+application_1.on(application_1.launchEvent, function (args) {
+    if (args.android) {
+        // For Android applications, args.android is an android.content.Intent class.
+        console.log("Launched Android application with the following intent: " + args.android + ".");
+    }
+    else if (args.ios) {
+        // For iOS applications, args.ios is NSDictionary (launchOptions).
+        console.log("Launched iOS application with options: " + args.ios);
+    }
+});
+application_1.on(application_1.suspendEvent, function (args) {
+    if (args.android) {
+        // For Android applications, args.android is an android activity class.
+        console.log("Activity: " + args.android);
+    }
+    else if (args.ios) {
+        // For iOS applications, args.ios is UIApplication.
+        console.log("UIApplication: " + args.ios);
+    }
+});
+application_1.on(application_1.resumeEvent, function (args) {
+    if (args.android) {
+        // For Android applications, args.android is an android activity class.
+        console.log("Activity: " + args.android);
+    }
+    else if (args.ios) {
+        // For iOS applications, args.ios is UIApplication.
+        console.log("UIApplication: " + args.ios);
+    }
+});
+application_1.on(application_1.exitEvent, function (args) {
+    if (args.android) {
+        // For Android applications, args.android is an android activity class.
+        console.log("Activity: " + args.android);
+    }
+    else if (args.ios) {
+        // For iOS applications, args.ios is UIApplication.
+        console.log("UIApplication: " + args.ios);
+    }
+});
+application_1.on(application_1.lowMemoryEvent, function (args) {
+    if (args.android) {
+        // For Android applications, args.android is an android activity class.
+        console.log("Activity: " + args.android);
+    }
+    else if (args.ios) {
+        // For iOS applications, args.ios is UIApplication.
+        console.log("UIApplication: " + args.ios);
+    }
+});
+application_1.on(application_1.uncaughtErrorEvent, function (args) {
+    if (args.android) {
+        // For Android applications, args.android is an NativeScriptError.
+        console.log("NativeScriptError: " + args.android);
+    }
+    else if (args.ios) {
+        // For iOS applications, args.ios is NativeScriptError.
+        console.log("NativeScriptError: " + args.ios);
+    }
+});
+// A traditional NativeScript application starts by initializing global objects, setting up global CSS rules, creating, and navigating to the main page. 
+// Angular applications need to take care of their own initialization: modules, components, directives, routes, DI providers. 
+// A NativeScript Angular app needs to make both paradigms work together, so we provide a wrapper platform object, platformNativeScriptDynamic, 
+// that sets up a NativeScript application and can bootstrap the Angular framework.
+platform_1.platformNativeScriptDynamic().bootstrapModule(app_module_1.AppModule).then(function () {
+    console.log("The application is now running!");
+}).catch(function (e) {
+    console.log("The application bootstrapping failed with error: " + e);
+});
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibWFpbi5qcyIsInNvdXJjZVJvb3QiOiIiLCJzb3VyY2VzIjpbIm1haW4udHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7QUFBQSwwR0FBMEc7QUFDMUcsMERBQTRFO0FBRTVFLDJDQUF5QztBQUV6QywyQ0FBK0o7QUFNL0osZ0JBQWEsQ0FBQyx5QkFBVyxFQUFFLFVBQUMsSUFBMEI7SUFDbEQsRUFBRSxDQUFDLENBQUMsSUFBSSxDQUFDLE9BQU8sQ0FBQyxDQUFDLENBQUM7UUFDZiw2RUFBNkU7UUFDN0UsT0FBTyxDQUFDLEdBQUcsQ0FBQywwREFBMEQsR0FBRyxJQUFJLENBQUMsT0FBTyxHQUFHLEdBQUcsQ0FBQyxDQUFDO0lBQ2pHLENBQUM7SUFBQyxJQUFJLENBQUMsRUFBRSxDQUFDLENBQUMsSUFBSSxDQUFDLEdBQUcsQ0FBQyxDQUFDLENBQUM7UUFDbEIsa0VBQWtFO1FBQ2xFLE9BQU8sQ0FBQyxHQUFHLENBQUMseUNBQXlDLEdBQUcsSUFBSSxDQUFDLEdBQUcsQ0FBQyxDQUFDO0lBQ3RFLENBQUM7QUFDTCxDQUFDLENBQUMsQ0FBQztBQUVILGdCQUFhLENBQUMsMEJBQVksRUFBRSxVQUFDLElBQTBCO0lBQ25ELEVBQUUsQ0FBQyxDQUFDLElBQUksQ0FBQyxPQUFPLENBQUMsQ0FBQyxDQUFDO1FBQ2YsdUVBQXVFO1FBQ3ZFLE9BQU8sQ0FBQyxHQUFHLENBQUMsWUFBWSxHQUFHLElBQUksQ0FBQyxPQUFPLENBQUMsQ0FBQztJQUM3QyxDQUFDO0lBQUMsSUFBSSxDQUFDLEVBQUUsQ0FBQyxDQUFDLElBQUksQ0FBQyxHQUFHLENBQUMsQ0FBQyxDQUFDO1FBQ2xCLG1EQUFtRDtRQUNuRCxPQUFPLENBQUMsR0FBRyxDQUFDLGlCQUFpQixHQUFHLElBQUksQ0FBQyxHQUFHLENBQUMsQ0FBQztJQUM5QyxDQUFDO0FBQ0wsQ0FBQyxDQUFDLENBQUM7QUFFSCxnQkFBYSxDQUFDLHlCQUFXLEVBQUUsVUFBQyxJQUEwQjtJQUNsRCxFQUFFLENBQUMsQ0FBQyxJQUFJLENBQUMsT0FBTyxDQUFDLENBQUMsQ0FBQztRQUNmLHVFQUF1RTtRQUN2RSxPQUFPLENBQUMsR0FBRyxDQUFDLFlBQVksR0FBRyxJQUFJLENBQUMsT0FBTyxDQUFDLENBQUM7SUFDN0MsQ0FBQztJQUFDLElBQUksQ0FBQyxFQUFFLENBQUMsQ0FBQyxJQUFJLENBQUMsR0FBRyxDQUFDLENBQUMsQ0FBQztRQUNsQixtREFBbUQ7UUFDbkQsT0FBTyxDQUFDLEdBQUcsQ0FBQyxpQkFBaUIsR0FBRyxJQUFJLENBQUMsR0FBRyxDQUFDLENBQUM7SUFDOUMsQ0FBQztBQUNMLENBQUMsQ0FBQyxDQUFDO0FBRUgsZ0JBQWEsQ0FBQyx1QkFBUyxFQUFFLFVBQUMsSUFBMEI7SUFDaEQsRUFBRSxDQUFDLENBQUMsSUFBSSxDQUFDLE9BQU8sQ0FBQyxDQUFDLENBQUM7UUFDZix1RUFBdUU7UUFDdkUsT0FBTyxDQUFDLEdBQUcsQ0FBQyxZQUFZLEdBQUcsSUFBSSxDQUFDLE9BQU8sQ0FBQyxDQUFDO0lBQzdDLENBQUM7SUFBQyxJQUFJLENBQUMsRUFBRSxDQUFDLENBQUMsSUFBSSxDQUFDLEdBQUcsQ0FBQyxDQUFDLENBQUM7UUFDbEIsbURBQW1EO1FBQ25ELE9BQU8sQ0FBQyxHQUFHLENBQUMsaUJBQWlCLEdBQUcsSUFBSSxDQUFDLEdBQUcsQ0FBQyxDQUFDO0lBQzlDLENBQUM7QUFDTCxDQUFDLENBQUMsQ0FBQztBQUVILGdCQUFhLENBQUMsNEJBQWMsRUFBRSxVQUFDLElBQTBCO0lBQ3JELEVBQUUsQ0FBQyxDQUFDLElBQUksQ0FBQyxPQUFPLENBQUMsQ0FBQyxDQUFDO1FBQ2YsdUVBQXVFO1FBQ3ZFLE9BQU8sQ0FBQyxHQUFHLENBQUMsWUFBWSxHQUFHLElBQUksQ0FBQyxPQUFPLENBQUMsQ0FBQztJQUM3QyxDQUFDO0lBQUMsSUFBSSxDQUFDLEVBQUUsQ0FBQyxDQUFDLElBQUksQ0FBQyxHQUFHLENBQUMsQ0FBQyxDQUFDO1FBQ2xCLG1EQUFtRDtRQUNuRCxPQUFPLENBQUMsR0FBRyxDQUFDLGlCQUFpQixHQUFHLElBQUksQ0FBQyxHQUFHLENBQUMsQ0FBQztJQUM5QyxDQUFDO0FBQ0wsQ0FBQyxDQUFDLENBQUM7QUFFSCxnQkFBYSxDQUFDLGdDQUFrQixFQUFFLFVBQUMsSUFBMEI7SUFDekQsRUFBRSxDQUFDLENBQUMsSUFBSSxDQUFDLE9BQU8sQ0FBQyxDQUFDLENBQUM7UUFDZixrRUFBa0U7UUFDbEUsT0FBTyxDQUFDLEdBQUcsQ0FBQyxxQkFBcUIsR0FBRyxJQUFJLENBQUMsT0FBTyxDQUFDLENBQUM7SUFDdEQsQ0FBQztJQUFDLElBQUksQ0FBQyxFQUFFLENBQUMsQ0FBQyxJQUFJLENBQUMsR0FBRyxDQUFDLENBQUMsQ0FBQztRQUNsQix1REFBdUQ7UUFDdkQsT0FBTyxDQUFDLEdBQUcsQ0FBQyxxQkFBcUIsR0FBRyxJQUFJLENBQUMsR0FBRyxDQUFDLENBQUM7SUFDbEQsQ0FBQztBQUNMLENBQUMsQ0FBQyxDQUFDO0FBQ0gseUpBQXlKO0FBQ3pKLDhIQUE4SDtBQUM5SCxnSkFBZ0o7QUFDaEosbUZBQW1GO0FBQ25GLHNDQUEyQixFQUFFLENBQUMsZUFBZSxDQUFDLHNCQUFTLENBQUMsQ0FBQyxJQUFJLENBQUM7SUFDMUQsT0FBTyxDQUFDLEdBQUcsQ0FBQyxpQ0FBaUMsQ0FBQyxDQUFDO0FBQ25ELENBQUMsQ0FBQyxDQUFDLEtBQUssQ0FBQyxVQUFDLENBQUM7SUFDUCxPQUFPLENBQUMsR0FBRyxDQUFDLG1EQUFtRCxHQUFHLENBQUMsQ0FBQyxDQUFDO0FBQ3pFLENBQUMsQ0FBQyxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiLy8gdGhpcyBpbXBvcnQgc2hvdWxkIGJlIGZpcnN0IGluIG9yZGVyIHRvIGxvYWQgc29tZSByZXF1aXJlZCBzZXR0aW5ncyAobGlrZSBnbG9iYWxzIGFuZCByZWZsZWN0LW1ldGFkYXRhKVxuaW1wb3J0IHsgcGxhdGZvcm1OYXRpdmVTY3JpcHREeW5hbWljIH0gZnJvbSBcIm5hdGl2ZXNjcmlwdC1hbmd1bGFyL3BsYXRmb3JtXCI7XG5cbmltcG9ydCB7IEFwcE1vZHVsZSB9IGZyb20gXCIuL2FwcC5tb2R1bGVcIjtcbmltcG9ydCAqIGFzIGFwcGxpY2F0aW9uIGZyb20gJ2FwcGxpY2F0aW9uJztcbmltcG9ydCB7IG9uIGFzIGFwcGxpY2F0aW9uT24sIGxhdW5jaEV2ZW50LCBzdXNwZW5kRXZlbnQsIHJlc3VtZUV2ZW50LCBleGl0RXZlbnQsIGxvd01lbW9yeUV2ZW50LCB1bmNhdWdodEVycm9yRXZlbnQsIEFwcGxpY2F0aW9uRXZlbnREYXRhIH0gZnJvbSBcImFwcGxpY2F0aW9uXCI7XG5cblxuXG5cblxuYXBwbGljYXRpb25PbihsYXVuY2hFdmVudCwgKGFyZ3M6IEFwcGxpY2F0aW9uRXZlbnREYXRhKSA9PiB7XG4gICAgaWYgKGFyZ3MuYW5kcm9pZCkge1xuICAgICAgICAvLyBGb3IgQW5kcm9pZCBhcHBsaWNhdGlvbnMsIGFyZ3MuYW5kcm9pZCBpcyBhbiBhbmRyb2lkLmNvbnRlbnQuSW50ZW50IGNsYXNzLlxuICAgICAgICBjb25zb2xlLmxvZyhcIkxhdW5jaGVkIEFuZHJvaWQgYXBwbGljYXRpb24gd2l0aCB0aGUgZm9sbG93aW5nIGludGVudDogXCIgKyBhcmdzLmFuZHJvaWQgKyBcIi5cIik7XG4gICAgfSBlbHNlIGlmIChhcmdzLmlvcykge1xuICAgICAgICAvLyBGb3IgaU9TIGFwcGxpY2F0aW9ucywgYXJncy5pb3MgaXMgTlNEaWN0aW9uYXJ5IChsYXVuY2hPcHRpb25zKS5cbiAgICAgICAgY29uc29sZS5sb2coXCJMYXVuY2hlZCBpT1MgYXBwbGljYXRpb24gd2l0aCBvcHRpb25zOiBcIiArIGFyZ3MuaW9zKTtcbiAgICB9XG59KTtcblxuYXBwbGljYXRpb25PbihzdXNwZW5kRXZlbnQsIChhcmdzOiBBcHBsaWNhdGlvbkV2ZW50RGF0YSkgPT4ge1xuICAgIGlmIChhcmdzLmFuZHJvaWQpIHtcbiAgICAgICAgLy8gRm9yIEFuZHJvaWQgYXBwbGljYXRpb25zLCBhcmdzLmFuZHJvaWQgaXMgYW4gYW5kcm9pZCBhY3Rpdml0eSBjbGFzcy5cbiAgICAgICAgY29uc29sZS5sb2coXCJBY3Rpdml0eTogXCIgKyBhcmdzLmFuZHJvaWQpO1xuICAgIH0gZWxzZSBpZiAoYXJncy5pb3MpIHtcbiAgICAgICAgLy8gRm9yIGlPUyBhcHBsaWNhdGlvbnMsIGFyZ3MuaW9zIGlzIFVJQXBwbGljYXRpb24uXG4gICAgICAgIGNvbnNvbGUubG9nKFwiVUlBcHBsaWNhdGlvbjogXCIgKyBhcmdzLmlvcyk7XG4gICAgfVxufSk7XG5cbmFwcGxpY2F0aW9uT24ocmVzdW1lRXZlbnQsIChhcmdzOiBBcHBsaWNhdGlvbkV2ZW50RGF0YSkgPT4ge1xuICAgIGlmIChhcmdzLmFuZHJvaWQpIHtcbiAgICAgICAgLy8gRm9yIEFuZHJvaWQgYXBwbGljYXRpb25zLCBhcmdzLmFuZHJvaWQgaXMgYW4gYW5kcm9pZCBhY3Rpdml0eSBjbGFzcy5cbiAgICAgICAgY29uc29sZS5sb2coXCJBY3Rpdml0eTogXCIgKyBhcmdzLmFuZHJvaWQpO1xuICAgIH0gZWxzZSBpZiAoYXJncy5pb3MpIHtcbiAgICAgICAgLy8gRm9yIGlPUyBhcHBsaWNhdGlvbnMsIGFyZ3MuaW9zIGlzIFVJQXBwbGljYXRpb24uXG4gICAgICAgIGNvbnNvbGUubG9nKFwiVUlBcHBsaWNhdGlvbjogXCIgKyBhcmdzLmlvcyk7XG4gICAgfVxufSk7XG5cbmFwcGxpY2F0aW9uT24oZXhpdEV2ZW50LCAoYXJnczogQXBwbGljYXRpb25FdmVudERhdGEpID0+IHtcbiAgICBpZiAoYXJncy5hbmRyb2lkKSB7XG4gICAgICAgIC8vIEZvciBBbmRyb2lkIGFwcGxpY2F0aW9ucywgYXJncy5hbmRyb2lkIGlzIGFuIGFuZHJvaWQgYWN0aXZpdHkgY2xhc3MuXG4gICAgICAgIGNvbnNvbGUubG9nKFwiQWN0aXZpdHk6IFwiICsgYXJncy5hbmRyb2lkKTtcbiAgICB9IGVsc2UgaWYgKGFyZ3MuaW9zKSB7XG4gICAgICAgIC8vIEZvciBpT1MgYXBwbGljYXRpb25zLCBhcmdzLmlvcyBpcyBVSUFwcGxpY2F0aW9uLlxuICAgICAgICBjb25zb2xlLmxvZyhcIlVJQXBwbGljYXRpb246IFwiICsgYXJncy5pb3MpO1xuICAgIH1cbn0pO1xuXG5hcHBsaWNhdGlvbk9uKGxvd01lbW9yeUV2ZW50LCAoYXJnczogQXBwbGljYXRpb25FdmVudERhdGEpID0+IHtcbiAgICBpZiAoYXJncy5hbmRyb2lkKSB7XG4gICAgICAgIC8vIEZvciBBbmRyb2lkIGFwcGxpY2F0aW9ucywgYXJncy5hbmRyb2lkIGlzIGFuIGFuZHJvaWQgYWN0aXZpdHkgY2xhc3MuXG4gICAgICAgIGNvbnNvbGUubG9nKFwiQWN0aXZpdHk6IFwiICsgYXJncy5hbmRyb2lkKTtcbiAgICB9IGVsc2UgaWYgKGFyZ3MuaW9zKSB7XG4gICAgICAgIC8vIEZvciBpT1MgYXBwbGljYXRpb25zLCBhcmdzLmlvcyBpcyBVSUFwcGxpY2F0aW9uLlxuICAgICAgICBjb25zb2xlLmxvZyhcIlVJQXBwbGljYXRpb246IFwiICsgYXJncy5pb3MpO1xuICAgIH1cbn0pO1xuXG5hcHBsaWNhdGlvbk9uKHVuY2F1Z2h0RXJyb3JFdmVudCwgKGFyZ3M6IEFwcGxpY2F0aW9uRXZlbnREYXRhKSA9PiB7XG4gICAgaWYgKGFyZ3MuYW5kcm9pZCkge1xuICAgICAgICAvLyBGb3IgQW5kcm9pZCBhcHBsaWNhdGlvbnMsIGFyZ3MuYW5kcm9pZCBpcyBhbiBOYXRpdmVTY3JpcHRFcnJvci5cbiAgICAgICAgY29uc29sZS5sb2coXCJOYXRpdmVTY3JpcHRFcnJvcjogXCIgKyBhcmdzLmFuZHJvaWQpO1xuICAgIH0gZWxzZSBpZiAoYXJncy5pb3MpIHtcbiAgICAgICAgLy8gRm9yIGlPUyBhcHBsaWNhdGlvbnMsIGFyZ3MuaW9zIGlzIE5hdGl2ZVNjcmlwdEVycm9yLlxuICAgICAgICBjb25zb2xlLmxvZyhcIk5hdGl2ZVNjcmlwdEVycm9yOiBcIiArIGFyZ3MuaW9zKTtcbiAgICB9XG59KTtcbi8vIEEgdHJhZGl0aW9uYWwgTmF0aXZlU2NyaXB0IGFwcGxpY2F0aW9uIHN0YXJ0cyBieSBpbml0aWFsaXppbmcgZ2xvYmFsIG9iamVjdHMsIHNldHRpbmcgdXAgZ2xvYmFsIENTUyBydWxlcywgY3JlYXRpbmcsIGFuZCBuYXZpZ2F0aW5nIHRvIHRoZSBtYWluIHBhZ2UuIFxuLy8gQW5ndWxhciBhcHBsaWNhdGlvbnMgbmVlZCB0byB0YWtlIGNhcmUgb2YgdGhlaXIgb3duIGluaXRpYWxpemF0aW9uOiBtb2R1bGVzLCBjb21wb25lbnRzLCBkaXJlY3RpdmVzLCByb3V0ZXMsIERJIHByb3ZpZGVycy4gXG4vLyBBIE5hdGl2ZVNjcmlwdCBBbmd1bGFyIGFwcCBuZWVkcyB0byBtYWtlIGJvdGggcGFyYWRpZ21zIHdvcmsgdG9nZXRoZXIsIHNvIHdlIHByb3ZpZGUgYSB3cmFwcGVyIHBsYXRmb3JtIG9iamVjdCwgcGxhdGZvcm1OYXRpdmVTY3JpcHREeW5hbWljLCBcbi8vIHRoYXQgc2V0cyB1cCBhIE5hdGl2ZVNjcmlwdCBhcHBsaWNhdGlvbiBhbmQgY2FuIGJvb3RzdHJhcCB0aGUgQW5ndWxhciBmcmFtZXdvcmsuXG5wbGF0Zm9ybU5hdGl2ZVNjcmlwdER5bmFtaWMoKS5ib290c3RyYXBNb2R1bGUoQXBwTW9kdWxlKS50aGVuKCgpID0+IHtcbiAgICBjb25zb2xlLmxvZyhcIlRoZSBhcHBsaWNhdGlvbiBpcyBub3cgcnVubmluZyFcIik7XG59KS5jYXRjaCgoZSkgPT4ge1xuICAgIGNvbnNvbGUubG9nKFwiVGhlIGFwcGxpY2F0aW9uIGJvb3RzdHJhcHBpbmcgZmFpbGVkIHdpdGggZXJyb3I6IFwiICsgZSk7XG59KTsiXX0=
